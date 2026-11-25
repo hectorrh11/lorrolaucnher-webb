@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LorroLauncher · Todo tu PC gaming en un launcher</title>
+  <meta name="description" content="LorroLauncher es un launcher de escritorio gratuito para Windows 10/11: biblioteca, descargas, logros, copias de partidas y estadísticas, sin anuncios.">
+  <meta name="theme-color" content="#151518">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio">
+        <img src="assets/img/logo.png" alt="Logo de LorroLauncher" width="32" height="32">
+        <span>LorroLauncher</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#descargar">Descargar</a>
+        <a href="#extras">Extras</a>
+        <a href="#tutorial">Tutorial</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero__text">
+        <p class="eyebrow">LorroLauncher</p>
+        <h1>Todo tu PC gaming en un launcher, gratis, sin anuncios y con lo importante guardado en tu equipo.</h1>
+        <p class="hero__lead">Es un launcher de escritorio independiente para Windows 10/11, en 64 bits. Reúne tu biblioteca en un solo sitio para descargar, instalar y lanzar tus juegos, con logros, estadísticas y copias de partidas.</p>
+        <p class="hero__note">Sin anuncios, sin suscripciones y sin paywalls. Está en 42 idiomas y tiene modo Big Picture con mando.</p>
+        <p class="hero__actions"><a class="btn btn--solid" href="#descargar">Descargar</a> <a class="text-link" href="#funciones">Ver las funciones</a></p>
+      </div>
+
+      <aside class="facts" aria-label="Datos básicos">
+        <h2 class="facts__title">Lo básico</h2>
+        <dl>
+          <div><dt>Sistema</dt><dd>Windows 10/11, 64 bits</dd></div>
+          <div><dt>Precio</dt><dd>Gratis, sin anuncios</dd></div>
+          <div><dt>Idiomas</dt><dd>42</dd></div>
+          <div><dt>Datos</dt><dd>En tu equipo</dd></div>
+          <div><dt>Formato</dt><dd>Instalador o portable</dd></div>
+        </dl>
+      </aside>
+
+      <figure class="shot hero__shot zoomable">
+        <button class="shot__button" type="button" aria-label="Ampliar captura de la página de inicio">
+          <img src="assets/img/inicio.png" alt="Página de inicio de LorroLauncher con el catálogo y las tendencias" loading="lazy">
+        </button>
+        <figcaption>La página de inicio, con las tendencias y el catálogo.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section notice-section" id="avisos">
+      <div class="section-head">
+        <span class="eyebrow">Antes de empezar</span>
+        <h2>Un par de cosas que conviene saber</h2>
+      </div>
+
+      <div class="notice-block">
+        <h3>Steam</h3>
+        <p>Para que la gran mayoría de los juegos funcione, ten Steam instalado. Hay juegos que no arrancan si Steam no está en el equipo.</p>
+      </div>
+
+      <div class="notice-block">
+        <h3>Antivirus</h3>
+        <p>Al descargar o extraer juegos, es muy posible que el antivirus salte con amenazas y borre archivos. Si sigues adelante, hazlo bajo tu responsabilidad: cuando salten esas alertas tendrás que aceptarlas para que los archivos no se pierdan. Más abajo está la forma de evitarlo excluyendo la carpeta de juegos.</p>
+      </div>
+
+      <div class="setup">
+        <h3>Preparar la carpeta de juegos</h3>
+        <p>Recomiendo crear una carpeta solo para los juegos de LorroLauncher, por ejemplo <code>C:\Juegos\Lorro</code>, y decirle al launcher que use esa ruta.</p>
+        <ol class="numbered-steps">
+          <li>Crea la carpeta en el disco donde quieras guardar los juegos.</li>
+          <li>En el launcher, abre <strong>Ajustes</strong>.</li>
+          <li>En la lista de la izquierda, entra en <strong>General</strong>.</li>
+          <li>En <strong>Ruta de descarga</strong>, escribe la ruta de la carpeta que acabas de crear.</li>
+          <li>Pulsa <strong>Actualizar</strong> para guardar el cambio.</li>
+        </ol>
+
+        <h3>Excluir esa carpeta en Seguridad de Windows</h3>
+        <p>Si usas el antivirus que viene con Windows 10/11, sigue estos pasos. Con otro antivirus, busca la opción de exclusiones en su configuración.</p>
+        <ol class="numbered-steps">
+          <li>Abre <strong>Seguridad de Windows</strong> desde el menú Inicio.</li>
+          <li>Entra en <strong>Protección contra virus y amenazas</strong>.</li>
+          <li>Pulsa <strong>Administrar configuración</strong>.</li>
+          <li>Entra en <strong>Exclusiones</strong> y pulsa <strong>Agregar o quitar exclusiones</strong>.</li>
+          <li>Pulsa <strong>Agregar una exclusión</strong> y elige <strong>Carpeta</strong>.</li>
+          <li>Selecciona la carpeta de juegos que creaste antes.</li>
+        </ol>
+        <p>Así el antivirus deja de revisar esa carpeta y no tendrás que aceptar amenazas cada vez.</p>
+      </div>
+    </section>
+
+    <section class="section" id="funciones">
+      <div class="section-head">
+        <span class="eyebrow">01 / Qué hace</span>
+        <h2>Funciones</h2>
+      </div>
+      <p class="intro">Lo que hace el launcher, contado sin adornos.</p>
+
+      <div class="feature-leads">
+        <article class="feature">
+          <h3>Biblioteca</h3>
+          <div class="feature__body">
+            <p>Cuadrícula con carátulas, búsqueda y filtros. Colecciones: Terminado, En proceso, Abandonado y No instalado. Cada tarjeta muestra el tiempo jugado real y la ficha reúne requisitos, capturas, logros y versiones.</p>
+            <div class="feature__shots">
+              <figure class="shot zoomable">
+                <button class="shot__button" type="button" aria-label="Ampliar captura de la biblioteca">
+                  <img src="assets/img/libreria.png" alt="Biblioteca de LorroLauncher con carátulas y tiempo jugado en cada juego" loading="lazy">
+                </button>
+                <figcaption>La biblioteca, con las carátulas y el tiempo jugado.</figcaption>
+              </figure>
+              <figure class="shot zoomable">
+                <button class="shot__button" type="button" aria-label="Ampliar captura del catálogo">
+                  <img src="assets/img/catalogo.png" alt="Catálogo de juegos con filtros por año, género y etiquetas" loading="lazy">
+                </button>
+                <figcaption>El catálogo con sus filtros.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+        <article class="feature feature--narrow">
+          <h3>Lanzar</h3>
+          <div class="feature__body">
+            <p>Al terminar una descarga detecta el .exe automáticamente, o lo eliges a mano. Doble clic o botón de play, con argumentos y variables de entorno por juego.</p>
+          </div>
+        </article>
+        <article class="feature">
+          <h3>Descargas</h3>
+          <div class="feature__body">
+            <p>Gestor propio: valida el enlace antes de empezar, usa hasta 32 conexiones, reintenta conservando lo descargado y reanuda tras reiniciar. Muestra gráficas de velocidad, extrae automáticamente y puede pasar la descarga a IDM, NDM o FDM si quieres.</p>
+            <figure class="shot zoomable">
+              <button class="shot__button" type="button" aria-label="Ampliar captura de las descargas">
+                <img src="assets/img/descargas.png" alt="Descarga en curso en LorroLauncher con la gráfica de velocidad" loading="lazy">
+              </button>
+              <figcaption>Una descarga en curso, con la gráfica de velocidad.</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+
+      <div class="feature-list">
+        <article class="mini-feature">
+          <h3>Logros y LorroPoints</h3>
+          <p>Logros sincronizados y moneda local calculada con los puntos de los logros obtenidos.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Tienda</h3>
+          <p>Acentos Golden, Esmeralda y Rubí. También 7 marcos de avatar, 6 títulos y 6 fondos animados.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Personalización</h3>
+          <p>Tema claro, oscuro y transparente real. Fondo con imagen o vídeo propio, inicio configurable y modo rendimiento.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Copias de partidas</h3>
+          <p>Detecta rutas, copia al cerrar o antes de restaurar, guarda historial y permite exportar e importar. Nunca borra archivos tuyos.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Estadísticas</h3>
+          <p>Sesiones reales, totales, juegos más usados y actividad por día, semana y mes. Todo se queda en local.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Diagnóstico y almacenamiento</h3>
+          <p>Comprueba ejecutable, permisos, espacio y rutas. Informe de discos, duplicados, limpieza de cachés y mover instalaciones con vuelta atrás segura.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Clips</h3>
+          <p>Grabación en segundo plano con atajo global: los últimos 5–90 s, con audio del sistema y micrófono. Página con reproductor y borrado.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Emulación</h3>
+          <p>Instalación de emuladores y soporte de RetroAchievements.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Big Picture</h3>
+          <p>Navegación completa con mando.</p>
+        </article>
+        <article class="mini-feature">
+          <h3>Actualizaciones</h3>
+          <p>Automáticas, desde la propia aplicación.</p>
+        </article>
+      </div>
+
+      <figure class="shot wide-shot zoomable">
+        <button class="shot__button" type="button" aria-label="Ampliar captura del apartado de integraciones">
+          <img src="assets/img/integraciones.png" alt="Ajustes de LorroLauncher en el apartado de integraciones, con RetroAchievements" loading="lazy">
+        </button>
+        <figcaption>El apartado de integraciones, donde está RetroAchievements.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="descargar">
+      <div class="section-head">
+        <span class="eyebrow">02 / Para usarlo</span>
+        <h2>Descargar</h2>
+      </div>
+      <p class="intro">Instalador de 64 bits para Windows 10/11.</p>
+
+      <div class="download-actions">
+        <a class="btn btn--solid" href="https://github.com/hectorrh11/lorro-launcher/releases/latest/download/LorroLauncher-Setup.exe">Descargar instalador</a>
+        <a class="btn btn--outline" href="https://github.com/hectorrh11/lorro-launcher">GitHub</a>
+      </div>
+      <p class="small-note">Descarga directa de la última versión publicada.</p>
+
+      <div class="details" id="detalles">
+        <h3>Detalles</h3>
+        <dl>
+          <div><dt>Configuración</dt><dd><code>%APPDATA%\Lorro Launcher</code></dd></div>
+          <div><dt>Clips</dt><dd><code>Videos\Lorro Launcher\Clips</code></dd></div>
+          <div><dt>Formatos</dt><dd>Instalador o portable, ambos de 64 bits.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="extras">
+      <div class="section-head">
+        <span class="eyebrow">03 / Fuentes</span>
+        <h2>Extras</h2>
+      </div>
+
+      <div class="extras-intro">
+        <h3>LorroLibrary</h3>
+        <p>LorroLibrary es un conjunto de fuentes de descarga que se pueden añadir al launcher. Al añadirlas, aparecen juegos con enlaces de descarga disponibles.</p>
+        <p>Para usarlo, añade las fuentes en el apartado Fuentes de descarga dentro del launcher. Justo debajo viene el tutorial con las capturas, paso a paso.</p>
+        <button class="btn btn--outline btn--small" id="copy-all" type="button">Copiar todas</button>
+      </div>
+
+      <figure class="shot extras-shot zoomable">
+        <button class="shot__button" type="button" aria-label="Ampliar captura de Fuentes de descargas">
+          <img src="assets/img/fuentes-de-descargas.png" alt="Apartado Fuentes de descargas de LorroLauncher con varias fuentes añadidas" loading="lazy">
+        </button>
+        <figcaption>El apartado Fuentes de descargas dentro del launcher.</figcaption>
+      </figure>
+
+      <div class="sources">
+        <article class="source">
+          <div class="source__info">
+            <h4>FitGirl</h4>
+            <p>Fuente de juegos de PC. Añade sus enlaces de descarga al catálogo del launcher.</p>
+          </div>
+          <code class="source__url">https://hydralinks.cloud/sources/fitgirl.json</code>
+          <button class="copy-btn" type="button">Copiar</button>
+        </article>
+        <article class="source">
+          <div class="source__info">
+            <h4>SteamRIP</h4>
+            <p>Otra fuente de juegos de PC con enlaces de descarga para la biblioteca.</p>
+          </div>
+          <code class="source__url">https://hydralinks.cloud/sources/steamrip.json</code>
+          <button class="copy-btn" type="button">Copiar</button>
+        </article>
+        <article class="source">
+          <div class="source__info">
+            <h4>OnlineFIX</h4>
+            <p>Fuente de juegos de PC que aporta sus enlaces de descarga al launcher.</p>
+          </div>
+          <code class="source__url">https://hydralinks.cloud/sources/onlinefix.json</code>
+          <button class="copy-btn" type="button">Copiar</button>
+        </article>
+        <article class="source">
+          <div class="source__info">
+            <h4>SteamGG</h4>
+            <p>Fuente de juegos de PC. Sus enlaces aparecen en el catálogo al añadirla.</p>
+          </div>
+          <code class="source__url">https://wkeynhk.online/steamgg.json</code>
+          <button class="copy-btn" type="button">Copiar</button>
+        </article>
+        <article class="source">
+          <div class="source__info">
+            <h4>Redump</h4>
+            <p>Fuente de juegos de consola: PS2, PS3 y similares. No es para juegos de PC.</p>
+          </div>
+          <code class="source__url">https://wkeynhk.online/redump.json</code>
+          <button class="copy-btn" type="button">Copiar</button>
+        </article>
+      </div>
+
+      <p class="disclaimer">LorroLauncher no aloja ni distribuye juegos. Las fuentes son listas de enlaces de terceros y cada usuario es responsable de lo que descarga.</p>
+    </section>
+
+    <section class="section" id="tutorial">
+      <div class="section-head">
+        <span class="eyebrow">04 / Guía</span>
+        <h2>Cómo añadir las fuentes de descarga</h2>
+      </div>
+      <p class="intro">Cuatro pasos, con capturas reales del launcher. Pulsa en una imagen para verla más grande.</p>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step__head">
+            <span class="step__num">01</span>
+            <h3>Abrir Ajustes</h3>
+          </div>
+          <p>En la barra de la izquierda, pulsa Ajustes.</p>
+          <button class="tutorial__shot zoomable" type="button" aria-label="Ampliar captura del paso 1">
+            <img src="assets/img/tutorial-01.png" alt="Launcher con una flecha roja que señala Ajustes en el menú lateral" loading="lazy">
+          </button>
+        </li>
+        <li class="step step--offset">
+          <div class="step__head">
+            <span class="step__num">02</span>
+            <h3>Entrar en Fuentes de descargas</h3>
+          </div>
+          <p>Dentro de Ajustes, en la lista de la izquierda, elige Fuentes de descargas.</p>
+          <button class="tutorial__shot zoomable" type="button" aria-label="Ampliar captura del paso 2">
+            <img src="assets/img/tutorial-02.png" alt="Ajustes del launcher con una flecha roja que señala Fuentes de descargas en el menú" loading="lazy">
+          </button>
+        </li>
+        <li class="step">
+          <div class="step__head">
+            <span class="step__num">03</span>
+            <h3>Añadir fuente</h3>
+          </div>
+          <p>En la página Fuentes de descargas, pulsa el botón Añadir fuente, arriba a la derecha.</p>
+          <button class="tutorial__shot zoomable" type="button" aria-label="Ampliar captura del paso 3">
+            <img src="assets/img/tutorial-03.png" alt="Página Fuentes de descargas con el botón Añadir fuente señalado con un círculo rojo" loading="lazy">
+          </button>
+        </li>
+        <li class="step step--offset">
+          <div class="step__head">
+            <span class="step__num">04</span>
+            <h3>Pegar la URL</h3>
+          </div>
+          <p>En la ventana Añadir fuente, pega la URL del archivo JSON y confirma con Añadir fuente.</p>
+          <button class="tutorial__shot zoomable" type="button" aria-label="Ampliar captura del paso 4">
+            <img src="assets/img/tutorial-04.png" alt="Ventana Añadir fuente con el campo para la URL del JSON y el botón Añadir fuente" loading="lazy">
+          </button>
+        </li>
+      </ol>
+
+      <p class="reminder">Recordatorio: copia la URL, pégala en el launcher y repite con cada fuente.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>LorroLauncher</strong> · 2026</p>
+      <p>Proyecto independiente.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Captura ampliada">
+    <button class="lightbox__close" id="lightbox-close" type="button">Cerrar</button>
+    <figure>
+      <img id="lightbox-img" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+</body>
+</html>
